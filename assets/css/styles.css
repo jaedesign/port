@@ -7,30 +7,31 @@ body {
   font-size: 16px;
   color: #121212;
 }
+
 h1 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue';
   font-weight: lighter;
 }
 h2 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue';
   font-weight: lighter;
 }
 h3 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue';
   font-weight: lighter;
 }
 h4 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue';
   font-weight: lighter;
 }
 h5 {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue';
   font-weight: lighter;
 }
 
 .navbar, .nav-link {
   color: #404040;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue';
   font-weight: lighter;
   font-size: 18px;
 }
@@ -71,7 +72,7 @@ h5 {
   opacity: 100;
 }
 .image_title {
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue', ;
   ;
   font-weight: bolder;
   font-size: 32px;
@@ -100,8 +101,7 @@ h5 {
 }
 /* Footer css */
 .footer-basic {
-  font-family: 'Bebas Neue', cursive;
-  ;
+  font-family: 'Bebas Neue';
   font-weight: lighter;
   padding: 40px 0;
   background-color: white;
@@ -276,7 +276,7 @@ img.p-bottom {
   top: 100%;
   display: none;
   justify-content: center;
-  font-family: 'Bebas Neue', cursive;
+  font-family: 'Bebas Neue';
   font-weight: lighter;
   font-size: 18px;
   position: absolute;
@@ -296,11 +296,12 @@ img.p-bottom {
   max-width: 100%;
 }
 .carousel_gallery {
+	  margin: auto;
   padding: 0px;
   top: 0px;
   left: 0px;
   object-fit: cover;
-  width: 600px;
+  max-width: 100%;
   height: 600px;
   max-height: 600px !important;
 }
