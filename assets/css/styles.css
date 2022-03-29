@@ -27,11 +27,8 @@ h5 {
   font-family: 'Bebas Neue', cursive;
   font-weight: lighter;
 }
-.navbar-toggler, .navbar-toggler-icon {
-  align: items-end;
-}
 
-.navbar .nav-link {
+.navbar, .nav-link {
   color: #404040;
   font-family: 'Bebas Neue', cursive;
   font-weight: lighter;
