@@ -297,6 +297,7 @@ img.p-bottom {
 .carousel_gallery {
   padding: 0px;
   height: auto;
+  max-height: 600px !important;
   max-width: 100%;
 }
 .carousel_img_size {
