@@ -292,18 +292,17 @@ img.p-bottom {
 .gallery_img:hover .static {
   display: none;
 }
-.carousel {
-  max-width: 100%;
+.carousel .carousel-item {
+	top: 0px;
+	left: 0px;
+	min-width: 100%;
 }
+
 .carousel_gallery {
-	  margin: auto;
+
   padding: 0px;
-  top: 0px;
-  left: 0px;
-  object-fit: cover;
-  max-width: 100%;
-  height: 600px;
-  max-height: 600px !important;
+  height: auto;
+	max-width: 100%;
 }
 .carousel_img_size {
   margin: auto;
