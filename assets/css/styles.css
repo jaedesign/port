@@ -41,8 +41,6 @@ h5 {
   position: relative;
 }
 .img-nav {
-  margin: 0px, auto;
-  position: relative;
   display: flex;
   height: 500px;
   width: 100%;
@@ -51,7 +49,8 @@ h5 {
 .image_overlay {
   position: absolute;
   top: 0;
-  max-width: 100%;
+	left: 0;
+  width: 100%;
   height: 500px;
   background: rgba(255, 251, 228, 0.75);
   color: #404040;
