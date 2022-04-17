@@ -106,6 +106,7 @@ h5 {
   background-color: white;
   color: #404040;
 }
+
 .footer-basic ul {
   padding: 0;
   list-style: none;
@@ -115,6 +116,7 @@ h5 {
   margin-bottom: 0;
 }
 .footer-basic li {
+	color: #4959A7;
   padding: 0 10px;
 }
 .footer-basic ul a {
@@ -126,36 +128,31 @@ h5 {
   opacity: 1;
 }
 .footer-basic .social {
-  color: #404040;
+		margin-bottom: 10px;
   text-align: center;
-  padding-bottom: 25px;
 }
 .footer-basic .social > a {
+	text-align: center;
   font-size: 24px;
   width: 40px;
-  height: 40px;
-  line-height: 40px;
   display: inline-block;
-  text-align: center;
-  border-radius: 50%;
-  border: 1px solid #ccc;
-  margin: 0 8px;
-  color: inherit;
+	padding: 0px;
+  color: #404040;
   opacity: 0.75;
 }
 .footer-basic .social > a:hover {
   opacity: 0.9;
 }
 .footer-basic .copyright {
-  margin-top: 15px;
   text-align: center;
-  font-size: 13px;
+  font-size: 12px;
   color: #404040;
-  margin-bottom: 0;
+  margin: 10px;
 }
 .list-inline-item {
   color: #404040;
 }
+
 /* Image utilities */
 img.fill {
   object-fit: fill;
