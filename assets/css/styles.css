@@ -116,7 +116,7 @@ h5 {
   margin-bottom: 0;
 }
 .footer-basic li {
-	color: #4959A7;
+	color: #404040;
   padding: 0 10px;
 }
 .footer-basic ul a {
@@ -137,7 +137,7 @@ h5 {
   width: 40px;
   display: inline-block;
 	padding: 0px;
-  color: #404040;
+	color: #4959A7;
   opacity: 0.75;
 }
 .footer-basic .social > a:hover {
