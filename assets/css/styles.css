@@ -2,11 +2,9 @@
 /* CSS Document */
 @import	 url("../fonts/ionicons.min.css");
 @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Open+Sans&display=swap');
-
 html {
   overflow-x: hidden;
 }
-
 body {
   font-family: 'Open-Sans', sans-serif;
   font-size: 16px;
@@ -32,7 +30,25 @@ h5 {
   font-family: 'Bebas Neue';
   font-weight: lighter;
 }
+li {
+  position: relative;
+  display: inline-block;
+}
+li:after {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 100%;
+  width: 0;
+  height: 2px;
+  background-color: black;
+  transition: width .3s ease-in-out;
+}
+li:hover:after {
+  width: 100%;
+}
 .navbar, .nav-link {
+  position: relative;
   color: #404040;
   font-family: 'Bebas Neue';
   font-weight: lighter;
@@ -40,20 +56,47 @@ h5 {
 }
 /*  Homepage Image NAV */
 .image {
+  width: 600px;
+  max-height: 600px;
   position: relative;
+  top: 0;
+  left: 0;
 }
 .img-nav {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 600px;
+  height: 600px;
   display: flex;
-  height: 500px;
-  width: 100%;
-  object-fit: cover;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
+.imgfade {
+  width: 100%;
+  margin: 0 auto;
+  max-width: 600px;
+  background: white;
+  animation: fader 45s infinite;
+}
+/*@keyframes fader {
+  0%  { background: url("../img/Logos/01.jpg"); animation-delay: 0s; } 
+	  02.22%  { background: url("../img/Logos/02.jpg"); background-size: cover; animation-delay: 5s;  } 
+	  04.44%  { background: url("../img/Logos/03.jpg"); background-size: cover; animation-delay: 10s;} 
+	  06.66%  { background: url("../img/Logos/04.jpg"); background-size: cover; animation-delay: 15s;} 
+	  08.88%  { background: url("../img/Logos/05.jpg"); background-size: cover; animation-delay: 20s;} 
+	  11.1%  { background: url("../img/Logos/06.jpg"); background-size: cover; animation-delay: 25s;} 
+	  13.32%  { background: url("../img/Logos/07.jpg") ; background-size: cover; animation-delay: 30s;} 
+	  15.54%  { background: url("../img/Logos/08.jpg"); background-size: cover; animation-delay: 35s;} 
+	  100%  { background: url("../img/Logos/09.jpg"); background-size: cover; animation-delay: 40s;} 
+}*/
 .image_overlay {
   position: absolute;
   top: 0;
-	left: 0;
-  width: 100%;
-  height: 500px;
+  left: 0px;
+  width: 600px;
+  height: 600px;
   background: rgba(255, 251, 228, 0.75);
   color: #404040;
   display: flex;
@@ -106,7 +149,6 @@ h5 {
   background-color: white;
   color: #404040;
 }
-
 .footer-basic ul {
   padding: 0;
   list-style: none;
@@ -116,7 +158,7 @@ h5 {
   margin-bottom: 0;
 }
 .footer-basic li {
-	color: #404040;
+  color: #404040;
   padding: 0 10px;
 }
 .footer-basic ul a {
@@ -128,31 +170,31 @@ h5 {
   opacity: 1;
 }
 .footer-basic .social {
-		margin-bottom: 10px;
+  margin-bottom: 10px;
   text-align: center;
 }
 .footer-basic .social > a {
-	text-align: center;
+  text-align: center;
   font-size: 24px;
   width: 40px;
   display: inline-block;
-	padding: 0px;
-	color: #4959A7;
-  opacity: 0.75;
+  padding: 0px;
+  color: #3953A4;
+  opacity: 1;
 }
 .footer-basic .social > a:hover {
-  opacity: 0.9;
+  opacity: 0.75;
 }
 .footer-basic .copyright {
   text-align: center;
-  font-size: 12px;
+  font-size: 14px;
   color: #404040;
   margin: 10px;
+  font-weight: lighter;
 }
 .list-inline-item {
   color: #404040;
 }
-
 /* Image utilities */
 img.fill {
   object-fit: fill;
@@ -243,7 +285,7 @@ img.p-bottom {
 /*Gallery, Image Effects*/
 .gallery_img {
   align-content: center;
-  width: 400px;
+  width: 300px;
   display: block;
   margin: 0px;
   left: 0px;
@@ -258,8 +300,8 @@ img.p-bottom {
   margin: auto;
   padding: 0px;
   object-fit: cover;
-  height: 400px;
-  width: 400px;
+  height: 300px;
+  width: 300px;
   max-width: 400px;
 }
 .gallery_overlay {
@@ -313,5 +355,10 @@ img.p-bottom {
   width: 65%;
 }
 .carousel-caption {
-  top: 90%;
+  position: relative;
+  left: auto;
+  right: auto;
+  align-content: center;
+  margin-top: 25px;
+  top: 100%;
 }
