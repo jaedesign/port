@@ -56,27 +56,30 @@ li:hover:after {
 }
 /*  Homepage Image NAV */
 .image {
-  width: 600px;
-  max-height: 600px;
+  width: 500px;
+  max-height: 500px;
   position: relative;
   top: 0;
   left: 0;
 }
+
 .img-nav {
   position: relative;
   top: 0;
   left: 0;
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
 }
+
+
 .imgfade {
   width: 100%;
   margin: 0 auto;
-  max-width: 600px;
+  max-width: 500px;
   background: white;
   animation: fader 45s infinite;
 }
@@ -95,8 +98,8 @@ li:hover:after {
   position: absolute;
   top: 0;
   left: 0px;
-  width: 600px;
-  height: 600px;
+  width: 500px;
+  height: 500px;
   background: rgba(255, 251, 228, 0.75);
   color: #404040;
   display: flex;
@@ -116,6 +119,8 @@ li:hover:after {
 .image_overlay:hover {
   opacity: 100;
 }
+
+
 .image_title {
   font-family: 'Bebas Neue';
   font-weight: bolder;
@@ -351,6 +356,8 @@ img.p-bottom {
   height: auto;
   max-height: 600px !important;
 }
+
+
 .container-sm {
   width: 65%;
 }
